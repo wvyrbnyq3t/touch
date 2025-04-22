@@ -2,6 +2,9 @@ const el = window;
 let prevX = 0;
 let prevY = 0;
 
+const textDx = document.getElementById("dx");
+const textDy = document.getElementById("dy");
+
 // タッチ開始
 el.addEventListener("touchstart", (e) => {
   const touches = e.touches[0];
@@ -22,5 +25,6 @@ el.addEventListener("touchmove", (e) => {
   prevX = x;
   prevY = y;
 
-  console.log(dx, dy)
+  textDx.innerText = dx;
+  textDy.innerText = dy;
 })
