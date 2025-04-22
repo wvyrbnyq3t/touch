@@ -1,0 +1,82 @@
+html {
+  font-size: 10px;
+  touch-action: pan-x pan-y;
+}
+
+body {
+  background-color: #fff;
+  color: var(--c-txt);
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+
+.pageContent {
+  background-color: #fff;
+  box-shadow: 0 0 .1rem #333;
+  width: min(100dvw, var(--w-pc));
+  height: 100%;
+  margin: 0 auto;
+  min-height: 100dvh;
+  position: relative;
+
+  main {
+    section {
+      padding: 1.6rem;
+
+      .secTitle {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+      .secContent {
+        padding: 1.6rem 0;
+      }
+    }
+  }
+}
+
+/* border */
+.has-border {
+  border-bottom: .1rem solid var(--c-gray);
+}
+
+/* button style */
+.btn-secondary {
+  background-color: #fff;
+  border: .1rem solid var(--c-primary);
+  border-radius: .4rem;
+  color: var(--c-primary);
+  display: inline-block;
+  padding: 1.2rem 1.6rem;
+  position: relative;
+  text-align: center;
+  transition: opacity .4s;
+  width: fit-content;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+/* headline */
+.headline-splitLine {
+  border-bottom: .1rem solid var(--c-primary);
+  color: var(--c-primary);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 auto 1.6rem !important;
+  padding: 0 3.2rem .4rem 3.2rem !important;
+  text-align: center;
+  width: fit-content;
+}
+
+/* width */
+.w-100 {
+  width: 100% !important;
+}

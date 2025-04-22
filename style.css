@@ -1,0 +1,12 @@
+.map-wrap {
+  height: 100dvh;
+  width: min(100dvw, var(--w-pc));
+  overflow: hidden;
+  position: relative;
+
+  img {
+    object-fit: cover;
+    height: 100dvh;
+    transform: scale(2);
+  }
+}
